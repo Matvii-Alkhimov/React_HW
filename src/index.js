@@ -2,8 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { App } from 'components/App';
 import './index.css';
-import { render } from '@testing-library/react';
-import { Homework1 } from 'hw-1/hw-1';
 
 const containerEl = document.getElementById('root');
 const root = ReactDOM.createRoot(containerEl);

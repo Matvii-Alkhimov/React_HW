@@ -14,7 +14,7 @@ export const Homework1 = ({
             <h1>{name}</h1>
             <p>Ласкаво просимо до нашого сайту!</p>
             <img src={url} alt={alt} />
-            <a target="_blank" href={website.link}>{website.name}</a>
+            <a rel="noreferrer" target="_blank" href={website.link}>{website.name}</a>
             <p>Result: {firstNum + secondNum}</p>
             <ColorsList array={colors}></ColorsList>
         </>
