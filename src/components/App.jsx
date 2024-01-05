@@ -1,4 +1,10 @@
+// Homework 1
 import { Homework1 } from "hw-1/hw-1";
+
+// Homework 2
+import { Greeting } from "hw-2/Greeting";
+import { Message } from "hw-2/Message";
+import { Button } from "hw-2/Button";
 
 
 export const App = ({id}) => {
@@ -16,6 +22,22 @@ export const App = ({id}) => {
             secondNum={5}
             colors={["red", "blue", "green"]}
           ></Homework1>
+      )
+    } else if (Number(id) === 2) {
+      return (
+        <>
+          <Greeting
+            name={"Matvii"}
+          ></Greeting>
+          <Message
+            text={"Привіт, як справи??"}
+          ></Message>
+          <Button
+            onClick={()=>{
+              console.log("message");
+            }}
+          ></Button>
+        </>
       )
     }
 };
